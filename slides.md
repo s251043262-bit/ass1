@@ -14,7 +14,7 @@ hash: true
 ::: {.column width="50%"}
 
 ## Machine Performance Analysis
-#### Updated Specs: [45, 50, 55]
+#### Specs: LSL=45, Target=50, USL=55
 #### Pressure: 200kPa | Temp: 338K
 
 :::
@@ -47,8 +47,8 @@ hash: true
 ::: {.column width="50%"}
 ### Machine 1 Capability
 **Statistical Summary:**
-- $C_p$, $C_{pk}$, $C_{pu}$, $C_{pl}$ calculated.
-- Defect rate assessment vs Target 50.
+- Capability vs Target 50.
+- Limits: [45, 55].
 :::
 
 ::: {.column width="50%"}
@@ -78,7 +78,7 @@ hash: true
 ::: {.column width="50%"}
 ### Machine 2 Capability
 **Statistical Summary:**
-- Distribution vs Specification Limits.
+- Distribution vs Specification Limits [45, 55].
 :::
 
 ::: {.column width="50%"}
@@ -108,7 +108,7 @@ hash: true
 ::: {.column width="50%"}
 ### Machine 3 Capability
 **Statistical Summary:**
-- Distribution vs Specification Limits.
+- Distribution vs Specification Limits [45, 55].
 :::
 
 ::: {.column width="50%"}

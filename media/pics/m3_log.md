@@ -1,1 +1,1 @@
-Analysis for Machine 3 with LSL 45, USL 55
+Analysis for Machine 3 with LSL 45, Target 50, USL 55
