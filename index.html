@@ -560,83 +560,11 @@
 
 <section class="slide level1">
 
-<table>
-<tbody>
-<tr class="odd">
-<td>itle-slide: false</td>
-</tr>
-<tr class="even">
-<td>ibliography: references.bib</td>
-</tr>
-<tr class="odd">
-<td>sl: vancouver.csl</td>
-</tr>
-<tr class="even">
-<td>iteproc: true</td>
-</tr>
-<tr class="odd">
-<td>heme: serif</td>
-</tr>
-<tr class="even">
-<td>ackground-color: “#ffffff”</td>
-</tr>
-<tr class="odd">
-<td>ransition: slide</td>
-</tr>
-<tr class="even">
-<td>avigationMode: linear</td>
-</tr>
-<tr class="odd">
-<td>ash: true</td>
-</tr>
-</tbody>
-</table>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h2 id="sample-slides">Sample slides</h2>
-<h4 id="placeholdername">PlaceHolderName</h4>
-<h4 id="universiti-malaysia-perlis">Universiti Malaysia Perlis</h4>
-<h4 id="placeholderemail.com"><a
-href="placeholder@email.com">placeholder@email.com</a></h4>
-<audio id="bg-music" src="media/audio/sb.m4a" loop>
-</audio>
-<div id="audio-credit"
-style="position: absolute; bottom: 40px; right: 20px; font-size: 0.6em; opacity: 0.6;">
-<p>Music: “Adrift” by Scott Buckley (CC BY 4.0)</p>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const audio = document.getElementById('bg-music');
-    const credit = document.getElementById('audio-credit');
-
-    // hide credit by default
-    credit.style.display = 'none';
-
-    const test = new Audio('media/audio/bgm.mp3');
-
-    test.addEventListener('canplaythrough', () => {
-      // bgm.mp3 exists → use it, keep credit hidden
-      audio.src = 'media/audio/bgm.mp3';
-    }, { once: true });
-
-    test.addEventListener('error', () => {
-      // bgm.mp3 missing → sb.m4a will play → show credit
-      credit.style.display = 'block';
-    }, { once: true });
-
-    document.addEventListener('click', () => {
-      if (Reveal.getIndices().h === 0) {
-        audio.volume = 0.5;
-        audio.play();
-      }
-    }, { once: true });
-
-    Reveal.on('slidechanged', (event) => {
-      if (event.indexh > 0) { audio.pause(); }
-      else { audio.play(); }
-    });
-  });
-</script>
+<h2 id="machine-performance-analysis">Machine Performance Analysis</h2>
+<h4 id="updated-specs-45-50-55">Updated Specs: [45, 50, 55]</h4>
+<h4 id="pressure-200kpa-temp-338k">Pressure: 200kPa | Temp: 338K</h4>
 </div><div class="column" style="width:50%;">
 <p><img data-src="media/pics/logo1.png" /></p>
 </div>
@@ -646,12 +574,12 @@ style="position: absolute; bottom: 40px; right: 20px; font-size: 0.6em; opacity:
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-1-control">Machine 1 Control</h3>
-<p><strong>I-Chart Analysis:</strong> - Monitored at 200kPa / 338K. -
-Stability assessment of individuals.</p>
+<h3 id="machine-1-stability">Machine 1 Stability</h3>
+<p><strong>I-Chart Analysis:</strong> - Individual measurements
+evaluation. - 3-<span class="math inline">\(\sigma\)</span> control
+limits applied.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m1_control.html" width="100%" height="500px" style="border:none;">
-</iframe>
+<p><img data-src="media/pics/m1_ichart.png" /></p>
 </div>
 </div>
 </section>
@@ -660,11 +588,14 @@ Stability assessment of individuals.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-1-capability">Machine 1 Capability</h3>
-<p><strong>Process Capability:</strong> - Specs: [48, 52] - Analysis of
-<span class="math inline">\(\sigma\)</span> variation.</p>
+<p><strong>Statistical Summary:</strong> - <span
+class="math inline">\(C_p\)</span>, <span
+class="math inline">\(C_{pk}\)</span>, <span
+class="math inline">\(C_{pu}\)</span>, <span
+class="math inline">\(C_{pl}\)</span> calculated. - Defect rate
+assessment vs Target 50.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m1_capability.html" width="100%" height="500px" style="border:none;">
-</iframe>
+<p><img data-src="media/pics/m1_capability.png" /></p>
 </div>
 </div>
 </section>
@@ -672,11 +603,11 @@ Stability assessment of individuals.</p>
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-2-control">Machine 2 Control</h3>
-<p><strong>I-Chart Analysis:</strong> - Machine 2 performance data.</p>
+<h3 id="machine-2-stability">Machine 2 Stability</h3>
+<p><strong>I-Chart Analysis:</strong> - Monitoring stability for Machine
+2.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m2_control.html" width="100%" height="500px" style="border:none;">
-</iframe>
+<p><img data-src="media/pics/m2_ichart.png" /></p>
 </div>
 </div>
 </section>
@@ -685,10 +616,10 @@ Stability assessment of individuals.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-2-capability">Machine 2 Capability</h3>
-<p><strong>Process Capability:</strong> - Distribution vs Limits.</p>
+<p><strong>Statistical Summary:</strong> - Distribution vs Specification
+Limits.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m2_capability.html" width="100%" height="500px" style="border:none;">
-</iframe>
+<p><img data-src="media/pics/m2_capability.png" /></p>
 </div>
 </div>
 </section>
@@ -696,11 +627,11 @@ Stability assessment of individuals.</p>
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-3-control">Machine 3 Control</h3>
-<p><strong>I-Chart Analysis:</strong> - Data for Machine 3.</p>
+<h3 id="machine-3-stability">Machine 3 Stability</h3>
+<p><strong>I-Chart Analysis:</strong> - Monitoring stability for Machine
+3.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m3_control.html" width="100%" height="500px" style="border:none;">
-</iframe>
+<p><img data-src="media/pics/m3_ichart.png" /></p>
 </div>
 </div>
 </section>
@@ -709,11 +640,10 @@ Stability assessment of individuals.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-3-capability">Machine 3 Capability</h3>
-<p><strong>Process Capability:</strong> - Professional distribution
-curve.</p>
+<p><strong>Statistical Summary:</strong> - Distribution vs Specification
+Limits.</p>
 </div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/m3_capability.html" width="100%" height="500px" style="border:none;">
-</iframe>
+<p><img data-src="media/pics/m3_capability.png" /></p>
 </div>
 </div>
 </section>
@@ -798,7 +728,7 @@ curve.</p>
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'default',
+        navigationMode: 'linear',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,

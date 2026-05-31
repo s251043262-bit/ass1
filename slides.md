@@ -1,4 +1,4 @@
- ---
+---
 title-slide: false
 bibliography: references.bib
 csl: vancouver.csl
@@ -13,12 +13,9 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 
-## Sample slides
-#### PlaceHolderName
-#### Universiti Malaysia Perlis
-#### [placeholder@email.com](placeholder@email.com)
-
-<!-- __AUDIO_INTRO_DO_NOT_TOUCH__ -->
+## Machine Performance Analysis
+#### Updated Specs: [45, 50, 55]
+#### Pressure: 200kPa | Temp: 338K
 
 :::
 
@@ -32,15 +29,16 @@ hash: true
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 1 Control
+### Machine 1 Stability
 **I-Chart Analysis:**
-- Monitored at 200kPa / 338K.
-- Stability assessment of individuals.
+- Individual measurements evaluation.
+- 3-$\sigma$ control limits applied.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m1_control.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m1_ichart.png)
 :::
+
 ::::
 
 ---
@@ -48,28 +46,30 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 1 Capability
-**Process Capability:**
-- Specs: [48, 52]
-- Analysis of $\sigma$ variation.
+**Statistical Summary:**
+- $C_p$, $C_{pk}$, $C_{pu}$, $C_{pl}$ calculated.
+- Defect rate assessment vs Target 50.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m1_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m1_capability.png)
 :::
+
 ::::
 
 ---
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 2 Control
+### Machine 2 Stability
 **I-Chart Analysis:**
-- Machine 2 performance data.
+- Monitoring stability for Machine 2.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m2_control.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m2_ichart.png)
 :::
+
 ::::
 
 ---
@@ -77,27 +77,29 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 2 Capability
-**Process Capability:**
-- Distribution vs Limits.
+**Statistical Summary:**
+- Distribution vs Specification Limits.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m2_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m2_capability.png)
 :::
+
 ::::
 
 ---
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 3 Control
+### Machine 3 Stability
 **I-Chart Analysis:**
-- Data for Machine 3.
+- Monitoring stability for Machine 3.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m3_control.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m3_ichart.png)
 :::
+
 ::::
 
 ---
@@ -105,11 +107,12 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 3 Capability
-**Process Capability:**
-- Professional distribution curve.
+**Statistical Summary:**
+- Distribution vs Specification Limits.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m3_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m3_capability.png)
 :::
+
 ::::

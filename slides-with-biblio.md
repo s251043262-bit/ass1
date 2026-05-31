@@ -1,4 +1,4 @@
- ---
+---
 title-slide: false
 bibliography: references.bib
 csl: vancouver.csl
@@ -13,51 +13,9 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 
-## Sample slides
-#### PlaceHolderName
-#### Universiti Malaysia Perlis
-#### [placeholder@email.com](placeholder@email.com)
-
-<audio id="bg-music" src="media/audio/sb.m4a" loop></audio>
-
-<div id="audio-credit"
-     style="position: absolute; bottom: 40px; right: 20px; font-size: 0.6em; opacity: 0.6;">
-  Music: “Adrift” by Scott Buckley (CC BY 4.0)
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const audio = document.getElementById('bg-music');
-    const credit = document.getElementById('audio-credit');
-
-    // hide credit by default
-    credit.style.display = 'none';
-
-    const test = new Audio('media/audio/bgm.mp3');
-
-    test.addEventListener('canplaythrough', () => {
-      // bgm.mp3 exists → use it, keep credit hidden
-      audio.src = 'media/audio/bgm.mp3';
-    }, { once: true });
-
-    test.addEventListener('error', () => {
-      // bgm.mp3 missing → sb.m4a will play → show credit
-      credit.style.display = 'block';
-    }, { once: true });
-
-    document.addEventListener('click', () => {
-      if (Reveal.getIndices().h === 0) {
-        audio.volume = 0.5;
-        audio.play();
-      }
-    }, { once: true });
-
-    Reveal.on('slidechanged', (event) => {
-      if (event.indexh > 0) { audio.pause(); }
-      else { audio.play(); }
-    });
-  });
-</script>
+## Machine Performance Analysis
+#### Updated Specs: [45, 50, 55]
+#### Pressure: 200kPa | Temp: 338K
 
 :::
 
@@ -71,15 +29,16 @@ hash: true
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 1 Control
+### Machine 1 Stability
 **I-Chart Analysis:**
-- Monitored at 200kPa / 338K.
-- Stability assessment of individuals.
+- Individual measurements evaluation.
+- 3-$\sigma$ control limits applied.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m1_control.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m1_ichart.png)
 :::
+
 ::::
 
 ---
@@ -87,28 +46,30 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 1 Capability
-**Process Capability:**
-- Specs: [48, 52]
-- Analysis of $\sigma$ variation.
+**Statistical Summary:**
+- $C_p$, $C_{pk}$, $C_{pu}$, $C_{pl}$ calculated.
+- Defect rate assessment vs Target 50.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m1_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m1_capability.png)
 :::
+
 ::::
 
 ---
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 2 Control
+### Machine 2 Stability
 **I-Chart Analysis:**
-- Machine 2 performance data.
+- Monitoring stability for Machine 2.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m2_control.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m2_ichart.png)
 :::
+
 ::::
 
 ---
@@ -116,27 +77,29 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 2 Capability
-**Process Capability:**
-- Distribution vs Limits.
+**Statistical Summary:**
+- Distribution vs Specification Limits.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m2_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m2_capability.png)
 :::
+
 ::::
 
 ---
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 3 Control
+### Machine 3 Stability
 **I-Chart Analysis:**
-- Data for Machine 3.
+- Monitoring stability for Machine 3.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m3_control.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m3_ichart.png)
 :::
+
 ::::
 
 ---
@@ -144,13 +107,14 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 3 Capability
-**Process Capability:**
-- Professional distribution curve.
+**Statistical Summary:**
+- Distribution vs Specification Limits.
 :::
 
 ::: {.column width="50%"}
-<iframe data-src="media/plots/m3_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+![](media/pics/m3_capability.png)
 :::
+
 ::::
 
 ---
