@@ -560,13 +560,44 @@
 
 <section class="slide level1">
 
+<table>
+<tbody>
+<tr class="odd">
+<td>itle-slide: false</td>
+</tr>
+<tr class="even">
+<td>ibliography: references.bib</td>
+</tr>
+<tr class="odd">
+<td>sl: vancouver.csl</td>
+</tr>
+<tr class="even">
+<td>iteproc: true</td>
+</tr>
+<tr class="odd">
+<td>heme: serif</td>
+</tr>
+<tr class="even">
+<td>ackground-color: “#ffffff”</td>
+</tr>
+<tr class="odd">
+<td>ransition: slide</td>
+</tr>
+<tr class="even">
+<td>avigationMode: linear</td>
+</tr>
+<tr class="odd">
+<td>ash: true</td>
+</tr>
+</tbody>
+</table>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h2 id="sample-slides">Sample slides</h2>
 <h4 id="placeholdername">PlaceHolderName</h4>
 <h4 id="universiti-malaysia-perlis">Universiti Malaysia Perlis</h4>
 <h4 id="placeholderemail.com"><a
-href="mailto:placeholder@email.com">placeholder@email.com</a></h4>
+href="placeholder@email.com">placeholder@email.com</a></h4>
 <audio id="bg-music" src="media/audio/sb.m4a" loop>
 </audio>
 <div id="audio-credit"
@@ -615,61 +646,9 @@ style="position: absolute; bottom: 40px; right: 20px; font-size: 0.6em; opacity:
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="slide-one">Slide one</h3>
-<p><strong>Key Concepts:</strong> - Energy conservation per <span
-class="citation" data-cites="carnot1824">(1)</span>. - <span
-class="math inline">\(\Delta U = Q - W\)</span></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="media/pics/sample.png" /></p>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<p><span class="slide-title"
-data-title="My Hidden Slide Name"></span></p>
-<p><img data-src="media/pics/wide.jpeg" /></p>
-</section>
-<section class="slide level1">
-
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="the-master-equation">The Master Equation</h3>
-<p>The fundamental relation of thermodynamics:</p>
-<p><span class="math display">\[\Delta U = Q - W\]</span></p>
-<p>The work done <span class="math inline">\(W\)</span> is positive when
-the system expands against an external pressure.</p>
-</div><div class="column" style="width:50%;">
-<video data-src="media/videos/sample.mp4" data-autoplay loop muted width="100%">
-</video>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="visualizing-the-gas-law">Visualizing the Gas Law</h3>
-<p><strong>Interactive Model:</strong></p>
-<ul>
-<li>P, V, and T relationships.</li>
-<li>Use the slider to adjust pressure.</li>
-<li>Observe the phase boundary.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/sample.html" width="100%" height="500px" style="border:none;" scrolling="no">
-</iframe>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="machine-1-analysis">Machine 1 Analysis</h3>
-<p><strong>Conditions:</strong> - Pressure: 200kPa - Temperature:
-338K</p>
-<p><strong>Control Chart:</strong> Monitoring Part Length stability.</p>
+<h3 id="machine-1-control">Machine 1 Control</h3>
+<p><strong>I-Chart Analysis:</strong> - Monitored at 200kPa / 338K. -
+Stability assessment of individuals.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m1_control.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -681,8 +660,8 @@ the system expands against an external pressure.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-1-capability">Machine 1 Capability</h3>
-<p><strong>Analysis:</strong> - Distribution vs Spec Limits (48-52). -
-Verification of precision at high Temp.</p>
+<p><strong>Process Capability:</strong> - Specs: [48, 52] - Analysis of
+<span class="math inline">\(\sigma\)</span> variation.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m1_capability.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -693,10 +672,8 @@ Verification of precision at high Temp.</p>
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-2-analysis">Machine 2 Analysis</h3>
-<p><strong>Conditions:</strong> - Pressure: 200kPa - Temperature:
-338K</p>
-<p><strong>Control Chart:</strong> Stability check for Machine 2.</p>
+<h3 id="machine-2-control">Machine 2 Control</h3>
+<p><strong>I-Chart Analysis:</strong> - Machine 2 performance data.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m2_control.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -708,8 +685,7 @@ Verification of precision at high Temp.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-2-capability">Machine 2 Capability</h3>
-<p><strong>Analysis:</strong> - Process capability indices
-assessment.</p>
+<p><strong>Process Capability:</strong> - Distribution vs Limits.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m2_capability.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -720,9 +696,8 @@ assessment.</p>
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-3-analysis">Machine 3 Analysis</h3>
-<p><strong>Conditions:</strong> - Pressure: 200kPa - Temperature:
-338K</p>
+<h3 id="machine-3-control">Machine 3 Control</h3>
+<p><strong>I-Chart Analysis:</strong> - Data for Machine 3.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m3_control.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -734,8 +709,8 @@ assessment.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-3-capability">Machine 3 Capability</h3>
-<p><strong>Analysis:</strong> - Final machine performance
-verification.</p>
+<p><strong>Process Capability:</strong> - Professional distribution
+curve.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/m3_capability.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -744,12 +719,8 @@ verification.</p>
 </section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
-<div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-carnot1824" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Sadi
-Carnot. Reflections on the motive power of fire. Annals of Physics.
-1824;1:1–100.</div>
-</div>
+<div id="refs" role="list">
+
 </div>
 </section>
     </div>
@@ -827,7 +798,7 @@ Carnot. Reflections on the motive power of fire. Annals of Physics.
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
+        navigationMode: 'default',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
