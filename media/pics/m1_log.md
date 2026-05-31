@@ -1,1 +1,1 @@
-Analysis for Machine 1: LSL 45, Target 50, USL 55
+Machine 1 Cpk: 1.157
