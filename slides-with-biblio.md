@@ -128,6 +128,99 @@ The work done $W$ is positive when the system expands against an external pressu
 </iframe>
 :::
 ::::
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Analysis
+**Conditions:**
+- Pressure: 200kPa
+- Temperature: 338K
+
+**Control Chart:**
+Monitoring Part Length stability.
+:::
+
+::: {.column width="50%"}
+<iframe data-src="media/plots/m1_control.html" width="100%" height="500px" style="border:none;"></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Capability
+**Analysis:**
+- Distribution vs Spec Limits (48-52).
+- Verification of precision at high Temp.
+:::
+
+::: {.column width="50%"}
+<iframe data-src="media/plots/m1_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Analysis
+**Conditions:**
+- Pressure: 200kPa
+- Temperature: 338K
+
+**Control Chart:**
+Stability check for Machine 2.
+:::
+
+::: {.column width="50%"}
+<iframe data-src="media/plots/m2_control.html" width="100%" height="500px" style="border:none;"></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Capability
+**Analysis:**
+- Process capability indices assessment.
+:::
+
+::: {.column width="50%"}
+<iframe data-src="media/plots/m2_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Analysis
+**Conditions:**
+- Pressure: 200kPa
+- Temperature: 338K
+:::
+
+::: {.column width="50%"}
+<iframe data-src="media/plots/m3_control.html" width="100%" height="500px" style="border:none;"></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Capability
+**Analysis:**
+- Final machine performance verification.
+:::
+
+::: {.column width="50%"}
+<iframe data-src="media/plots/m3_capability.html" width="100%" height="500px" style="border:none;"></iframe>
+:::
+::::
 
 ---
 # Bibliography
